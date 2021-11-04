@@ -27,8 +27,11 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #485461;
   background-color: black;
+  position: fixed;
+  width: 90%;
+  z-index: 5;
 }
 
 h1 {
@@ -65,6 +68,7 @@ nav ul li:hover {
   width: 100px;
   text-align: center;
   color: black;
+  cursor: pointer;
 }
 
 /* MAIN CONTENT //////////////////////////////////////////////////////////// */
@@ -74,20 +78,23 @@ button {
   width: 100px;
   text-align: center;
   background-color: turquoise;
-  color: white;
+  color: black;
   border-radius: 25px;
   font-size: 18px;
   font-style: bold;
   opacity: 100%;
   font-weight: bold;
   border-color: turquoise;
+  transition: width 150ms, margin 150ms;
 }
 
 button:hover {
   border-color: turquoise;
-  color: black;
+  color: whitesmoke;
   border-color: turquoise;
   cursor: pointer;
+  width: 125px;
+  margin: 5px;
 }
 
 #about {
@@ -200,6 +207,65 @@ button:hover {
   height: 600px;
   background: rgba(0, 0, 0, 0.25);
   border-bottom: 1px solid gray;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.mailImg {
+  width: 33.3%;
+  background-color: white;
+  height: 100%;
+}
+
+.mailImg img {
+  width: 115%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 66.6%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 5%;
+}
+
+#name {
+  height: 7%;
+  width: 75%;
+  margin-left: 5.5%;
+  margin-bottom: 15px;
+}
+
+#email {
+  height: 7%;
+  width: 75%;
+  margin-left: 5.8%;
+}
+
+#message {
+  height: 15rem;
+  width: 75%;
+  margin-left: 13%;
+  border-radius: 0.25rem;
+  /* margin-top: 18%; */
+}
+
+#submit {
+  margin-left: 27%;
+  margin-top: 3.5rem;
+  width: 50%;
+  height: 5rem;
+  transition: margin-left 150ms, width 150ms;
+}
+
+#submit:hover {
+  color: whitesmoke;
+  height: 5rem;
+  width: 55%;
+  margin-left: 25%;
 }
 
 /* FOOTER STYLES ////////////////////////////////////////////////////////////// */
@@ -224,6 +290,10 @@ footer ul a {
   text-decoration: none;
   text-transform: uppercase;
   color: turquoise;
+}
+
+footer ul a:hover {
+  color: whitesmoke;
 }
 
 .contactInfo {

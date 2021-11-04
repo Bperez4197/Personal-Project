@@ -12,13 +12,14 @@
       <h1>Bryce Perez</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+          <a href="#about"><li>Home</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#projects"><li>Projects</li></a>
+          <a href="#contact"><li>Contact Me</li></a>
         </ul>
       </nav>
     </header>
+    <!--ABOUT /////////////////////////////////////////////////////////////////////////////-->
     <main>
       <div id="about">
         <canvas id="c"></canvas>
@@ -35,6 +36,7 @@
         </div>
         <canvas id="bg"></canvas>
       </div>
+      <!--SKILLS /////////////////////////////////////////////////////////////////////////////-->
       <div id="skills">
         <div id="skillContent">
           <h2>skills</h2>
@@ -67,12 +69,13 @@
                 <li>SQL</li>
                 <li>MySQL</li>
                 <li>JSON</li>
-                <li>Wordpress</li>
+                <li>RESTful APIs</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      <!--PROJECTS /////////////////////////////////////////////////////////////////////////////-->
       <div id="projects">
         <h3>Projects</h3>
         <div id="projectsContent">
@@ -81,21 +84,46 @@
           <p>description</p>
         </div>
       </div>
+      <!--CONTACT /////////////////////////////////////////////////////////////////////////////-->
       <div id="contact">
-        <form>
-          <label for="name">Full Name</label>
-          <input type="text" name="name" id="name" />
-          <label for="email">Email Address</label>
-          <input type="text" name="email" id="email" />
-          <label for="message">Message</label>
-          <input type="textarea" name="message" id="message" />
-          <button type="submit" id="submit">Submit</button>
-        </form>
+        <div class="mailImg"><img src="/emailImage.jpg" /></div>
+        <div class="contactForm">
+          <form>
+            <label for="name" style="font-size: 20px; color: whitesmoke"
+              >Name:
+            </label>
+            <input type="text" name="name" id="name" placeholder=" John Doe" />
+            <br />
+            <label for="email" style="font-size: 20px; color: whitesmoke"
+              >Email:
+            </label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder=" JohnDoe@gmail.com"
+            />
+            <br />
+            <label for="message" style="font-size: 20px; color: whitesmoke"
+              >Message:</label
+            >
+            <br />
+            <input
+              type="textarea"
+              name="message"
+              id="message"
+              placeholder=" Build me something cool!"
+            />
+            <br />
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </main>
+    <!--FOOTER /////////////////////////////////////////////////////////////////////////////-->
     <footer>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact Me</a></li>
